@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  moribot:
+    image: ghcr.io/moriartylink/moribot:latest
+    container_name: moribot
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./.env:/app/.env:ro
+      - ./session_*.session:/app/session_*.session
+    networks:
+      - moribot-network
+    healthcheck:
+      test: ["CMD", "python", "-c", "import sys; sys.exit(0)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+networks:
+  moribot-network:
+    driver: bridge

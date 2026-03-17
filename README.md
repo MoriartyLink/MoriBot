@@ -4,23 +4,42 @@ A dual-bot system with intelligent conversation capabilities.
 
 ## Quick Start
 
-### 1. Install Dependencies
+### Option 1: Docker (Recommended)
 ```bash
-pip install -r requirements.txt
+# Method 1: Direct run with sudo
+./docker-run.sh
+
+# Method 2: Local build (if registry issues)
+./docker-local.sh
+
+# Method 3: Manual setup
+docker pull ghcr.io/moriartylink/moribot:latest
+docker-compose up -d
+
+# Or manual run
+docker run -d \
+  --name moribot \
+  -v $(pwd)/data:/app/data \
+  -v $(pwd)/logs:/app/logs \
+  -v $(pwd)/.env:/app/.env:ro \
+  -v $(pwd)/session_*.session:/app/session_*.session \
+  ghcr.io/moriartylink/moribot:latest
 ```
 
-### 2. Configure Environment
+### Option 2: Local Setup
 ```bash
+# Install Dependencies
+pip install -r requirements.txt
+
+# Configure Environment
 cp .env_example .env
 # Edit .env with your API keys and credentials
-```
 
-### 3. Start the Bots
-```bash
+# Start the Bots
 ./simple_control.sh start
 ```
 
-### 4. Control the Bot
+### 3. Control the Bot
 Use the control bot (@moriartysassistantbot) with these commands:
 - `/status` - Check current mode
 - `/free` - Enable responses (FREE MODE)
