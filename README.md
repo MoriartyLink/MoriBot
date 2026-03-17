@@ -1,6 +1,6 @@
-# Moriarty's Bot System
+# MoriBot 
 
-A dual-bot system with intelligent conversation capabilities and witty insult responses.
+A dual-bot system with intelligent conversation capabilities.
 
 ## Quick Start
 
@@ -30,12 +30,12 @@ Use the control bot (@moriartysassistantbot) with these commands:
 
 ## Features
 
-- 🤖 **Intelligent Responses** - Powered by Groq AI with Llama 3.3
-- 🔥 **Witty Insults** - Clever comebacks when users insult the bot
-- � **Memory System** - Remembers conversation context
-- 🎭 **Personality Adaptation** - Adapts to different relationship types
-- 📱 **Dual Bot System** - Working bot + Control bot
-- 🔄 **Mode Switching** - FREE/BUSY modes for availability control
+- **Intelligent Responses** - Powered by Groq AI with Llama 3.3
+- **Witty Insults** - Clever comebacks when users insult the bot
+- **Memory System** - Remembers conversation context
+- **Personality Adaptation** - Adapts to different relationship types
+- **Dual Bot System** - Working bot + Control bot
+- **Mode Switching** - FREE/BUSY modes for availability control
 
 ## Requirements
 
