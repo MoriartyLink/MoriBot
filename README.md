@@ -1,6 +1,7 @@
 # MoriBot 
 
-<img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/8d0ffee8-8f4c-4a88-98e5-1a3f11a91c4e" />
+<img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/6e9b6e58-51ef-4beb-b565-d3792a69f5ad" />
+
 
 A dual-bot system with intelligent conversation capabilities.
 
