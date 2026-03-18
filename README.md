@@ -1,7 +1,9 @@
 # MoriBot 
 
-A dual-bot system with intelligent conversation capabilities.
 <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/8d0ffee8-8f4c-4a88-98e5-1a3f11a91c4e" />
+
+A dual-bot system with intelligent conversation capabilities.
+
 
 
 
